@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  var arra1 = [1, 2, 3, 4, 5];
+  var arra2 = [1, 2, 3, 4, 5, 6, 7];
+  var arra3 = [];
+
+  for (var i = 0; i < arra1.length; i++) {
+    if (!arra3.includes(arra1[i])) {
+      arra3.push(arra1[i]);
+    }
+  }
+  for (var j = 0; j < arra2.length; j++) {
+    if (!arra3.includes(arra2[j])) {
+      arra3.push(arra2[j]);
+    }
+  }
+  console.log(arra3);
+</script>
