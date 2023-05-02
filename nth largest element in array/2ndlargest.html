@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let arra1 = [1, 9, 7, 2, 8, 3];
+  larg = "";
+  secondlargest = "";
+  for (let i = 0; i < arra1.length; i++) {
+    if (arra1[i] > larg) {
+      secondlargest = larg;
+      larg = arra1[i];
+    }
+  }
+  alert(larg);
+  alert(secondlargest);
+</script>
