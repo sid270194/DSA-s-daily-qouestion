@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  var a = "my name is siddhant";
+  var b = "siddhant";
+  obj = {};
+  str1 = a.split(" ");
+  for (let i = 0; i < str1.length; i++) {
+    obj[str1[i]] = i;
+  }
+  if (obj.hasOwnProperty(b)) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+
+  console.log(obj);
+</script>
