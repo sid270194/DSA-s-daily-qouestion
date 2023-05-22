@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function findprime(no1, no2) {
+    prime = [];
+    if (isNaN(no1) || no1 <= 1 || isNaN(no2) || no2 <= 1) {
+      console.log("enter valid numver and greater than 1");
+      return;
+    }
+
+    for (var i = no1; i <= no2; i++) {
+      for (var j = 2; j < i; j++) {
+        if (i % j === 0) {
+          //console.log("Not prime");
+          break;
+        } else {
+          prime.push(i);
+          break;
+        }
+      }
+    }
+    console.log(prime);
+  }
+  var no1 = 10;
+  var no2 = 20;
+
+  findprime(no1, no2);
+</script>
