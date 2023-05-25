@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  var no = 120;
+  var output = 0;
+
+  while (no > 0) {
+    var no1 = no % 10;
+
+    output = output * 10 + no1;
+    no = Math.floor(no / 10);
+  }
+  console.log(output);
+</script>
