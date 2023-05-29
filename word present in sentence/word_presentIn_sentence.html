@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function findwordinsentence(senttence, findword) {
+    const findword1 = senttence.split(" ");
+
+    for (let i = 0; i < findword1.length; i++) {
+      if (findword1[i].toLowerCase() === findword.toLowerCase()) {
+        return true;
+      }
+    }
+    return false;
+  }
+  const senttence = "Hello my name is Ankit";
+  const findword = "my";
+  let reult = findwordinsentence(senttence, findword);
+  console.log(reult); //true
+</script>

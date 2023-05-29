@@ -8,7 +8,9 @@
   </head>
   <body></body>
 </html>
+
 <script>
+  // approch 1
   var no = 120;
   var output = 0;
 
@@ -18,5 +20,16 @@
     output = output * 10 + no1;
     no = Math.floor(no / 10);
   }
-  console.log(output);
+  //console.log(output);
+</script>
+
+<script>
+  // approch 1
+  var no = 120;
+  var no1 = String(no);
+  result = "";
+  for (let i = 0; i < no1.length; i++) {
+    result = no1[i] + result;
+  }
+  console.log(result);
 </script>

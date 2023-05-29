@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let k = 4;
+  let no1 = 0;
+  let no2 = 1;
+  let fibboneci = [];
+  for (let i = 0; i < k; i++) {
+    if (i < 2) {
+      fibboneci.push(i);
+    } else {
+      nextnumber = fibboneci[i - 1] + fibboneci[i - 2];
+      fibboneci.push(nextnumber);
+    }
+  }
+  console.log(fibboneci);
+</script>
