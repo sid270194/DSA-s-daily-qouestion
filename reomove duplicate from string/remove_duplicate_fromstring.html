@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  function removeDuplicate(str1) {
+    let output = {};
+    if (str1 === null || typeof str1 !== "string" || str1 === undefined) {
+      console.log("enter a valid input");
+    } else {
+      for (let i = 0; i < str1.length; i++) {
+        if (!output.hasOwnProperty(str1[i])) {
+          output[str1[i]] = str1[i];
+        }
+      }
+    }
+    return Object.keys(output).join("");
+  }
+  let str1 = "aaabbbcccd";
+  let result = removeDuplicate(str1);
+  //console.log(result);
+</script>
+
+<script>
+  function removeDuplicate(str2) {
+    let output = ["a"];
+    if (str2 === null || typeof str2 !== "string" || str2 === undefined) {
+      console.log("enter a valid input");
+    } else {
+      for (let k = 0; k < str2.length; k++) {
+        let flag = false;
+
+        for (let j = 0; j < output.length; j++) {
+          if (output[j] === str2[k]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) {
+          output.push(str2[k]);
+        }
+      }
+    }
+    return output;
+  }
+  let str2 = "aaabbbcccd";
+  let result2 = removeDuplicate(str2);
+  console.log(result2);
+</script>
