@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // string1= " my name is siddhant i live in india"   // output=  indiaaaaaa
+
+  // create a function which will return longest word fro string
+  //accept string and convert it into array using split
+  //intial var counter=""
+  // run loop
+  // if string[i].length>counter,length
+  // counter= string1[i]
+  //return counter
+
+  function Longestword(String1) {
+    String2 = String1.split(" ");
+    //console.log(String2);
+    let largesstring = "";
+    for (let i = 0; i < String2.length; i++) {
+      if (String2[i].length > largesstring.length) {
+        largesstring = String2[i];
+      }
+    }
+    return largesstring;
+  }
+  let String1 = "my name is siddhant i live in indiaaaaaaaaa";
+  console.log(Longestword(String1));
+</script>
