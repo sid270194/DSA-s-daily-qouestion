@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //create a function which will return weather string is true or flase
+  // pass string as a paramter
+  // take empty arra
+  // if string length is even then process otherwise return false
+  // store the key pair value of opening and closing braces in object
+  // iterate the sting
+  // if 1 iterated item is closing then return false
+  // if opening bracket is found push to  the arra
+  // if closing bracket is found  then match witth the objects key and value then pop it from the array
+  // in last if array is empty then return true
+  // elase true
+
+  var isValid = function (s) {
+    let newarray = [];
+    let obj = { "(": ")", "{": "}", "[": "]" };
+
+    if (s.length % 2 !== 0) {
+      return false;
+    } else {
+      for (let i = 0; i < s.length; i++) {
+        if (obj.hasOwnProperty(s[i])) {
+          newarray.push(s[i]);
+        } else if (obj[newarray.pop()] !== s[i]) {
+          return false;
+        }
+      }
+      if (newarray.length === 0) {
+        return true;
+      }
+    }
+  };
+
+  let str = "(())";
+  console.log(isValid(str));
+</script>
